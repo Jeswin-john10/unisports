@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unisport</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="men.css">
+    <!-- gg fonds -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Jaro:opsz@6..72&family=Oswald:wght@200..700&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Jaro:opsz@6..72&family=Oswald:wght@200..700&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- bootstrp icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="./index.html">UniSports</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="itemMenu" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Items
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="itemMenu">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Men Card -->
+                                    <div class="col-md-4">
+                                        <div class="card text-center bg-dark text-light">
+                                           <a href="./men.html"> <img src="./cards/defaut.avif" width="300px" class="card-img-top" alt="Men"></a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Men</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Women Card -->
+                                    <div class="col-md-4">
+                                        <div class="card text-center bg-dark text-light">
+                                            <a href="./woman.html">
+                                                <img src="./cards/defaut (1).avif" class="card-img-top" alt="Women">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Women</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Sports Accessories Card -->
+                                    <div class="col-md-4">
+                                        <div class="card text-center bg-dark text-light">
+                                            <a href="./sportsaccessories.html"> 
+                                                <img src="./cards/defaut (2).avif" class="card-img-top" alt="Sports Accessories">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sports Accessories</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for products"
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- men section -->
+  <h1 style="margin: 60px;">..</h1>
+
+    <header class="text-white  text-center">
+        <h1>Men's Sports Items</h1>
+    </header>
+    <div class="container my-4">
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4">
+            <!-- apparel -->
+            <div class="col">
+                <div class="category-card">
+                   <a href="#football"> <img src="https://contents.mediadecathlon.com/s1067579/k$f7ab52e3a96089a6cc1c01c91fe167e3/Frame%20427321652.png?format=auto&quality=70&f=320x0"
+                    alt=""></a>
+                    <p>Football</p>
+                </div>
+            </div>
+            <!-- footwear -->
+            <div class="col">
+                <div class="category-card">
+                   <a href="#boots"> <img src="https://contents.mediadecathlon.com/s1067582/k$ed89814ba33f007ca4d8ecde44d066b4/Frame%20427321653.png?format=auto&quality=70&f=320x0"
+                    alt=""></a>
+                    <p>Boots</p>
+                </div>
+            </div>
+            <!-- Equipments -->
+            <div class="col">
+                <div class="category-card">
+                    <a href="#jersey"><img src="https://contents.mediadecathlon.com/s1067585/k$81efb63654bb807f1b81cf7891b2f847/Frame%20427321561.png?format=auto&quality=70&f=320x0"
+                        alt=""></a>
+                    <p>Jersey</p>
+                </div>
+            </div>
+            <!-- Accessories -->
+            <div class="col">
+                <div class="category-card">
+                   <a href="#shorts"> <img src="https://contents.mediadecathlon.com/s1067586/k$b0fcf2dc8cf616ea32f6c4f6c24877ea/Frame%20427321654.png?format=auto&quality=70&f=320x0"
+                    alt=""></a>
+                    <p>Shorts</p>
+                </div>
+            </div>
+            <!-- protective gear -->
+            <div class="col">
+                <div class="category-card">
+                    <a href="#gears"><img src="https://contents.mediadecathlon.com/s1067588/k$226bba43f7bf76de8b4d32d80ea040dc/Frame%20427321656.png?format=auto&quality=70&f=320x0"
+                        alt="Socks & Shinguards"></a>
+                    <p>Protective gears</p>
+                </div>
+            </div>
+            <!-- Gloves-->
+            <div class="col">
+                <div class="category-card">
+                   <a href="#gloves"> <img src="https://contents.mediadecathlon.com/s1067568/k$52242029327ba39072bbb8b949899d5d/Frame%20427321655.png?format=auto&quality=70&f=320x0"
+                    alt="Training Accessories"></a>
+                    <p>Gloves</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--carousel-->
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://contents.mediadecathlon.com/s1067574/k$81ce5a3fa08e91a25ad66e588879728c/Frame%20427321659.png?format=auto&quality=70&f=1920x0"
+                    class="d-block w-100" alt="Football Ball 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://contents.mediadecathlon.com/s1067583/k$1edac2266efa2d7d8f171ab03f207d1e/Frame%20427321662.png?format=auto&quality=70&f=1920x0"
+                    class="d-block w-100" alt="Football Ball 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://contents.mediadecathlon.com/s1067574/k$81ce5a3fa08e91a25ad66e588879728c/Frame%20427321659.png?format=auto&quality=70&f=1920x0"
+                    class="d-block w-100" alt="Football Ball 2">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    <br><br><br><br>
+    <!--football-->
+    <div class="container bg-white">
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div id="football" class="col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/p2154072/da97d54a0217b5b54a093cb1cb4da812/p2154072.jpg?format=auto&quality=70&f=320x0"
+                        alt="Football" class="product-image mb-3">
+                    <p class="product-title">Football Ball Training Size 5</p>
+                    <p class="text-muted">KIPSTA</p>
+                    <p class="product-rating">★ 4.4</p>
+                    <p class="fw-bold">₹399</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark btn-sm">Add to Cart</button></a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/p2606798/67ad9a88845032fbaa0aef1e501870ec/p2606798.jpg?format=auto&quality=70&f=320x0"
+                        alt="Football" class="product-image mb-3">
+                    <p class="product-title">Football Training Ball F100</p>
+                    <p class="text-muted">KIPSTA</p>
+                    <p class="product-rating">★ 4.4</p>
+                    <p class="fw-bold">₹699</p>
+                   <a href=""> <button class="btn btn-dark btn-sm">Add to Cart</button></a>
+                </div>
+
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/p2193901/5d224f7efe366b9cec38ad2b664eb4ad/p2193901.jpg?format=auto&quality=70&f=320x0"
+                        alt="Football" class="product-image mb-3">
+                    <p class="product-title">Football Training Ball F100</p>
+                    <p class="text-muted">KIPSTA</p>
+                    <p class="product-rating">★ 4.4</p>
+                    <p class="fw-bold">₹699</p>
+                    <a href=""><button class="btn btn-dark btn-sm">Add to Cart</button></a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/p2154164/73698deddacfd12d401b7b8262b0b948/p2154164.jpg?format=auto&quality=70&f=320x0"
+                        alt="Football" class="product-image mb-3">
+                    <p class="product-title">Football Training Ball F100</p>
+                    <p class="text-muted">KIPSTA</p>
+                    <p class="product-rating">★ 4.4</p>
+                    <p class="fw-bold">₹699</p>
+                    <a href=""><button class="btn btn-dark btn-sm">Add to Cart</button></a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row g-3 mt-2">
+            <!-- Product 1 -->
+            <div id="boots" class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/p2380465/k$85c669a7977d047389867fbc53ac3a66/kids-football-boots-lace-100-grass-black-yellow.jpg?format=auto&quality=70&f=320x0"
+                        alt="Shoe" class="product-image">
+                    <span class="badge badge-sale">Clearance</span>
+                    <p class="product-title">Men's Football Shoes Agility 100</p>
+                    <p class="product-rating">★ 4.3 | 3.8k</p>
+                    <p class="product-price">₹999 <span class="text-muted text-decoration-line-through">₹1,699</span>
+                    </p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/p1788716/k$dba6672ef20f40b9e8ae9e531f844490/kids-football-shoes-agility-100-grass-black-red.jpg?format=auto&quality=70&f=320x0"
+                        alt="Shoe" class="product-image">
+                    <p class="product-title">Football Boots 100 MG - Black</p>
+                    <p class="product-rating">★ 4.2 | 83</p>
+                    <p class="product-price">₹1,699</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/p2380433/k$47db981d7e5bd61aade59eb9a33dfe30/football-boots-viralto-iii-3d-airmesh-mg-ag-intense.jpg?format=auto&quality=70&f=320x0"
+                        alt="Shoe" class="product-image">
+                    <span class="badge badge-sale">Price drop</span>
+                    <p class="product-title">Men's Football Shoes Futsal</p>
+                    <p class="product-rating">★ 4.4 | 2.2k</p>
+                    <p class="product-price">₹999 <span class="text-muted text-decoration-line-through">₹1,699</span>
+                    </p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/p1788692/k$f9cf74fcbef7fbee485d7c8ff13900ef/men-s-football-shoes-agility-140-fg-blue.jpg?format=auto&quality=70&f=320x0"
+                        alt="Shoe" class="product-image">
+                    <span class="badge badge-sale">Price drop</span>
+                    <p class="product-title">Men's Football Shoes Futsal</p>
+                    <p class="product-rating">★ 4.4 | 2.2k</p>
+                    <p class="product-price">₹999 <span class="text-muted text-decoration-line-through">₹1,699</span>
+                    </p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+
+                <!-- Repeat for more products -->
+            </div>
+        </div>
+
+        <div class="row g-3 mt-2">
+            <!-- Product 1 -->
+            <div id="jersey" class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/p2571080/b8ddd1387fc475b180a98a3b03ac4c58/p2571080.jpg?format=auto&quality=70&f=320x0"
+                        alt="Track Pant" class="product-image">
+                    <p class="product-title">Adult Football Track Pant - Black</p>
+                    <p class="product-rating">★ 4.6 | 1k</p>
+                    <p class="product-price">₹999</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/m15693987/k$c39cf3cc40636f46692f575ece171051/adidas-juve-h-jsy-men-football-jersey-black.jpg?format=auto&quality=70&f=320x0"
+                        alt="Jacket" class="product-image">
+                    <p class="product-title">Kids Football Jacket Training Essential</p>
+                    <p class="product-rating">★ 4.8 | 190</p>
+                    <p class="product-price">₹799</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/m18673700/k$7311bf3ffbc43bf60c278532e5048439/adidas-mufc-h-jsy-men-football-jerseys-red.jpg?format=auto&quality=70&f=320x0"
+                        alt="Jersey" class="product-image">
+                    <span class="badge badge-sale">Clearance</span>
+                    <p class="product-title">Adult Football Jersey Shirt - Argentina</p>
+                    <p class="product-rating">★ 4.0 | 25</p>
+                    <p class="product-price">₹599 <span class="text-muted text-decoration-line-through">₹899</span></p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://contents.mediadecathlon.com/m14868853/k$8bde7bc18b5eb50a8ed6fdcdeb51b6d9/adidas-fcb-h-jsy-men-football-jersey-white.jpg?format=auto&quality=70&f=320x0"
+                        alt="Jersey" class="product-image">
+                    <p class="product-title">Women's Football Jersey Shirt - Indigo</p>
+                    <p class="product-rating">★ 4.9 | 13</p>
+                    <p class="product-price">₹699</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+        </div>
+
+        <div class="row g-3 mt-2">
+            <!-- Product 1 -->
+            <div id="shorts" class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/51bZd-TTkAL._AC_UY327_FMwebp_QL65_.jpg"
+                        alt="Track Pant" class="product-image">
+                    <p class="product-title">Adult Football Track Pant - Black</p>
+                    <p class="product-rating">★ 4.6 | 1k</p>
+                    <p class="product-price">₹999</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/61IanJE2ZsL._AC_UY327_FMwebp_QL65_.jpg"
+                        alt="Jacket" class="product-image">
+                    <p class="product-title">Kids Football Jacket Training Essential</p>
+                    <p class="product-rating">★ 4.8 | 190</p>
+                    <p class="product-price">₹799</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/61fregVSyqL._AC_UY327_FMwebp_QL65_.jpg"
+                        alt="Jersey" class="product-image">
+                    <span class="badge badge-sale">Clearance</span>
+                    <p class="product-title">Adult Football Jersey Shirt - Argentina</p>
+                    <p class="product-rating">★ 4.0 | 25</p>
+                    <p class="product-price">₹599 <span class="text-muted text-decoration-line-through">₹899</span></p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/51QtHzpa4lL._AC_UY327_FMwebp_QL65_.jpg"
+                        alt="Jersey" class="product-image">
+                    <p class="product-title">Women's Football Jersey Shirt - Indigo</p>
+                    <p class="product-rating">★ 4.9 | 13</p>
+                    <p class="product-price">₹699</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+        </div>
+        <div class="row g-3 mt-2">
+            <!-- Product 1 -->
+            <div id="gears" class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/51Z5M4eMsCL._AC_UY327_FMwebp_QL65_.jpg"
+                        alt="Track Pant" class="product-image">
+                    <p class="product-title">Adult Football Track Pant - Black</p>
+                    <p class="product-rating">★ 4.6 | 1k</p>
+                    <p class="product-price">₹999</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/61chDO+Kw5L._AC_UY327_FMwebp_QL65_.jpg"
+                        alt="Jacket" class="product-image">
+                    <p class="product-title">Kids Football Jacket Training Essential</p>
+                    <p class="product-rating">★ 4.8 | 190</p>
+                    <p class="product-price">₹799</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/51cA8gN2YpL._AC_UL480_FMwebp_QL65_.jpg"
+                        alt="Jersey" class="product-image">
+                    <span class="badge badge-sale">Clearance</span>
+                    <p class="product-title">Adult Football Jersey Shirt - Argentina</p>
+                    <p class="product-rating">★ 4.0 | 25</p>
+                    <p class="product-price">₹599 <span class="text-muted text-decoration-line-through">₹899</span></p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/51Dw3ldf8DL._AC_UY327_FMwebp_QL65_.jpg"
+                        alt="Jersey" class="product-image">
+                    <p class="product-title">Women's Football Jersey Shirt - Indigo</p>
+                    <p class="product-rating">★ 4.9 | 13</p>
+                    <p class="product-price">₹699</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+        </div>
+        <div class="row g-3 mt-2">
+            <!-- Product 1 -->
+            <div id="gloves" class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/91MaWxuxJaL._AC_UL480_FMwebp_QL65_.jpg"
+                        alt="Track Pant" class="product-image">
+                    <p class="product-title">Adult Football Track Pant - Black</p>
+                    <p class="product-rating">★ 4.6 | 1k</p>
+                    <p class="product-price">₹999</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/41JIkjgBgIL._AC_UL480_FMwebp_QL65_.jpg"
+                        alt="Jacket" class="product-image">
+                    <p class="product-title">Kids Football Jacket Training Essential</p>
+                    <p class="product-rating">★ 4.8 | 190</p>
+                    <p class="product-price">₹799</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/71oELbGk-KL._AC_UL480_FMwebp_QL65_.jpg"
+                        alt="Jersey" class="product-image">
+                    <span class="badge badge-sale">Clearance</span>
+                    <p class="product-title">Adult Football Jersey Shirt - Argentina</p>
+                    <p class="product-rating">★ 4.0 | 25</p>
+                    <p class="product-price">₹599 <span class="text-muted text-decoration-line-through">₹899</span></p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="product-card text-center">
+                    <img src="https://m.media-amazon.com/images/I/81MDdJUVoiL._AC_UL480_FMwebp_QL65_.jpg"
+                        alt="Jersey" class="product-image">
+                    <p class="product-title">Women's Football Jersey Shirt - Indigo</p>
+                    <p class="product-rating">★ 4.9 | 13</p>
+                    <p class="product-price">₹699</p>
+                    <a href="http://127.0.0.1:5500/hh.html"><button class="btn btn-dark add-to-cart-btn">Add to Cart</button></a>                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+      <!-- Footer -->
+
+      <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Left Column: Logo and Tagline -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="text-uppercase fw-bold">Unisport</h3>
+                    <p>Your ultimate destination for sports gear and equipment. We provide the tools to help you chase
+                        your goals.</p>
+                    <img src="./WhatsApp Image 2024-12-07 at 8.33.29 PM.jpeg" alt="Unisport Logo" class="img-fluid"
+                        style="max-height: 50px;">
+                </div>
+
+                <!-- Center Column: Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase fw-bold">Explore</h5>
+                    <div class="d-flex justify-content-between">
+                        <ul class="list-unstyled me-3">
+                            <li><a href="http://127.0.0.1:5500/index.html"
+                                    class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="http://127.0.0.1:5500/about.html"
+                                    class="text-white text-decoration-none">About</a></li>
+                            <li><a href="" class="text-white text-decoration-none">Shop</a></li>
+                            <li><a href="http://127.0.0.1:5500/hh.html" class="text-white text-decoration-none">Cart</a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="#team" class="text-white text-decoration-none">Our Team</a></li>
+                            <li><a href="#testimonials" class="text-white text-decoration-none">Testimonials</a></li>
+                            <li><a href="#faq" class="text-white text-decoration-none">FAQs</a></li>
+                            <li><a href="#blog" class="text-white text-decoration-none">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Social Media and Newsletter -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase fw-bold">Stay Connected</h5>
+                    <p>Follow us on our social platforms:</p>
+                    <div class="d-flex justify-content-center justify-content-md-start mb-3">
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+                    </div>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email"
+                                aria-label="Newsletter">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="my-4 border-light">
+
+            <!-- Bottom Footer -->
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0">© 2024 Unisport. All Rights Reserved.</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#terms" class="text-white text-decoration-none">Terms of
+                            Use</a></li>
+                    <li class="list-inline-item"><a href="#privacy" class="text-white text-decoration-none">Privacy
+                            Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

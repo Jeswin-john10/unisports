@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Unisport About</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- gg fonds -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Jaro:opsz@6..72&family=Oswald:wght@200..700&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Jaro:opsz@6..72&family=Oswald:wght@200..700&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- bootstrp icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* navbar */
+.dropdown-menu {
+    background-color: rgb(24, 18, 18); 
+    border-radius: 10px;
+    padding: 15px;
+    width: 900px; 
+    max-width: 1400px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.dropdown-menu .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.dropdown-menu .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu .card img {
+    height: 150px; 
+    object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dropdown-menu .row {
+        flex-direction: column; 
+    }
+    .dropdown-menu .col-md-4 {
+        margin-bottom: 15px; 
+    }
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.navbar-nav .nav-link {
+    color:white;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-brand {
+    font-size: 3.5rem;
+ 
+    color: #ffffff ; 
+    font-family: "Jaro", sans-serif;
+ 
+}
+.navbar-brand:hover{
+    color: goldenrod;
+}
+
+.nav-item {
+    font-size: 1.8rem;
+  
+    margin-left: 60px;
+    font-family: "Jaro", sans-serif;
+}
+.navbar-nav .nav-link {
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: goldenrod; 
+    border-radius: 5px; 
+    padding: 0.25rem 0.5rem; 
+}
+
+form .form-control {
+    font-family: "Jaro", sans-serif; 
+    font-size: 20px; 
+    color: #726c6c; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+form .btn {
+    font-family: "Jaro", sans-serif; 
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+}
+
+
+/* Footer Styling */
+footer {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #000000, #191818);
+}
+
+footer h5, footer h3 {
+    color: #f4a261;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f4a261;
+    text-decoration: underline;
+}
+
+footer .input-group input {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #f4a261;
+}
+
+footer .input-group .btn {
+    border-radius: 0 20px 20px 0;
+    background-color: #f4a261;
+    color: #222;
+    border: 1px solid #f4a261;
+}
+
+footer .btn:hover {
+    background-color: #e76f51;
+    border-color: #e76f51;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">UniSports</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="itemMenu" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Items
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="itemMenu">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Men Card -->
+                                    <div class="col-md-4">
+                                        <div class="card text-center bg-dark text-light">
+                                           <a href="./men.html"> <img src="./cards/defaut.avif" width="300px" class="card-img-top" alt="Men"></a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Men</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Women Card -->
+                                    <div class="col-md-4">
+                                        <div class="card text-center bg-dark text-light">
+                                            <a href="./woman.html">
+                                                <img src="./cards/defaut (1).avif" class="card-img-top" alt="Women">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Women</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Sports Accessories Card -->
+                                    <div class="col-md-4">
+                                        <div class="card text-center bg-dark text-light">
+                                            <a href="./sportsaccessories.html"> 
+                                                <img src="./cards/defaut (2).avif" class="card-img-top" alt="Sports Accessories">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sports Accessories</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for products"
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- About Us Section -->
+    <br><br><br><br>
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h1>About Us</h1>
+            <p><b>UniSport.in</b> is an online sports portal(domain) to provide high quality products to its customer and is
+                owned by Predawn private limited having its GSTIN registration (09AAMCP7699FIZK) as "Predawn Private
+                Limited"<br>The company is started by two young women entrepreneurs with the vision of making India a
+                sports paradise by providing best quality sports goods to every age and also other sports related
+                information/news/sports institutes/consultancy……..Legacy: Founder member family are associated with
+                sports industry since 1999 and supplying high quality of products across India to different customers
+                and reputed government institutions.With Family legacy in sports more than 22 years the two dynamic
+                women came to start this sports portal to benefit young India, sports person and children by providing
+                all sports solution at one place. <br><br>Think sports………………….. <b>UniSport</b> <br><br>We are a main games and
+                wellness organization submitted towards offering premium quality games things and frill for the two
+                people and whole groups. As well as assembling a wide scope of sports merchandise, we likewise supply
+                and fare them to our regarded customer across India and the world. We give outdoor supplies, types of
+                gear and frill for pretty much every game including football, cricket, tennis, b-ball, badminton,
+                hockey, golf and even kabaddi and so forth. Our responsibility towards guaranteeing 100% customer
+                fulfillment through arrangement of excellent items at the most sensible rates has settled on us the
+                favored decision of endless games lovers. <br><br> </p>
+            <h2>Why Choose Us?</h2>
+            <p>We comprehend your adoration for your favorite game and this is the thing that rouses us to outfit you
+                with the best quality stuff, extras and active apparel for something similar. With us you can make
+                certain of getting exactly what you need and that too in quick and sensibly evaluated way. From bats,
+                wickets, football shoes, tennis racquets, golf sticks and gym hardware to athletic apparel, shoes and
+                significantly more, we satisfy every one of your games merchandises needs in the most captivating and
+                acceptable way. Also, we are here to determine your questions and answer your inquiries so you can
+                settle on an educated purchasing choice that will upgrade your presentation and furnish you with an
+                enhancing experience. <br><br></p>
+            <h2>Benefits of working with us</h2>
+            <ol>
+                <li>Confided in Online Partner.</li>
+                <li> 100 % Genuine Products.</li>
+                <li>COD and Easy Return.</li>
+                <li> Packaging for delicate supplies.</li>
+            </ol>
+
+            <p><b>Founder and Director</b>: Abhai K S <br></p>
+
+            <p><b>Founder and Director</b>: Sjio siju</p>
+
+            <p> <b>Founder and Director</b>: Jeswin</p>
+
+            <p> <b>Founder and Director</b>: Arawind</p>
+
+            <p> <b>Founder and Director</b>: Josna</p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Left Column: Logo and Tagline -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="text-uppercase fw-bold">Unisport</h3>
+                    <p>Your ultimate destination for sports gear and equipment. We provide the tools to help you chase
+                        your goals.</p>
+                    <img src="./WhatsApp Image 2024-12-07 at 8.33.29 PM.jpeg" alt="Unisport Logo" class="img-fluid"
+                        style="max-height: 50px;">
+                </div>
+
+                <!-- Center Column: Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase fw-bold">Explore</h5>
+                    <div class="d-flex justify-content-between">
+                        <ul class="list-unstyled me-3">
+                            <li><a href="http://127.0.0.1:5500/index.html"
+                                    class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="http://127.0.0.1:5500/about.html"
+                                    class="text-white text-decoration-none">About</a></li>
+                            <li><a href="" class="text-white text-decoration-none">Shop</a></li>
+                            <li><a href="http://127.0.0.1:5500/hh.html" class="text-white text-decoration-none">Cart</a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="#team" class="text-white text-decoration-none">Our Team</a></li>
+                            <li><a href="#testimonials" class="text-white text-decoration-none">Testimonials</a></li>
+                            <li><a href="#faq" class="text-white text-decoration-none">FAQs</a></li>
+                            <li><a href="#blog" class="text-white text-decoration-none">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Social Media and Newsletter -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase fw-bold">Stay Connected</h5>
+                    <p>Follow us on our social platforms:</p>
+                    <div class="d-flex justify-content-center justify-content-md-start mb-3">
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+                    </div>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email"
+                                aria-label="Newsletter">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="my-4 border-light">
+
+            <!-- Bottom Footer -->
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0">© 2024 Unisport. All Rights Reserved.</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#terms" class="text-white text-decoration-none">Terms of
+                            Use</a></li>
+                    <li class="list-inline-item"><a href="#privacy" class="text-white text-decoration-none">Privacy
+                            Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

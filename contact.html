@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unisport</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="cart.css">
+    <!-- gg fonds -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Jaro:opsz@6..72&family=Oswald:wght@200..700&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Jaro:opsz@6..72&family=Oswald:wght@200..700&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- bootstrp icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Jaro", sans-serif;
+            background-color: #000000;
+        }
+
+        /* navbar */
+        .dropdown-menu {
+            background-color: rgb(24, 18, 18);
+            border-radius: 10px;
+            padding: 15px;
+            width: 900px;
+            max-width: 1400px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        .dropdown-menu .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dropdown-menu .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-menu .card img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .dropdown-menu .row {
+                flex-direction: column;
+            }
+
+            .dropdown-menu .col-md-4 {
+                margin-bottom: 15px;
+            }
+        }
+
+        .bg-black {
+            background-color: #000000;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .navbar-brand {
+            font-size: 3.5rem;
+
+            color: #ffffff;
+            font-family: "Jaro", sans-serif;
+
+        }
+
+        .navbar-brand:hover {
+            color: goldenrod;
+        }
+
+        .nav-item {
+            font-size: 1.8rem;
+
+            margin-left: 60px;
+            font-family: "Jaro", sans-serif;
+        }
+
+        .navbar-nav .nav-link {
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: goldenrod;
+            border-radius: 5px;
+            padding: 0.25rem 0.5rem;
+        }
+
+        form .form-control {
+            font-family: "Jaro", sans-serif;
+            font-size: 20px;
+            color: #726c6c;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0.5rem;
+        }
+
+        form .btn {
+            font-family: "Jaro", sans-serif;
+            font-size: 20px;
+            padding: 0.5rem 1rem;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .contact-container {
+            margin-top: 50px;
+        }
+
+        .form-control,
+        .btn {
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        .form-control:focus {
+            background-color: #444;
+            border-color: #666;
+            color: #fff;
+        }
+
+        .btn:hover {
+            background-color: #555;
+            border-color: #fff;
+        }
+
+        .map-container {
+            margin-top: 50px;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 350px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">UniSports</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="itemMenu" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Items
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="itemMenu">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Men Card -->
+                                    <div class="col-md-4">
+                                        <div class="card text-center bg-dark text-light">
+                                            <a href="./men.html"> <img src="./cards/defaut.avif" width="300px"
+                                                    class="card-img-top" alt="Men"></a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Men</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Women Card -->
+                                    <div class="col-md-4">
+                                        <div class="card text-center bg-dark text-light">
+                                            <a href="./woman.html">
+                                                <img src="./cards/defaut (1).avif" class="card-img-top" alt="Women">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Women</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Sports Accessories Card -->
+                                    <div class="col-md-4">
+                                        <div class="card text-center bg-dark text-light">
+                                            <a href="./sportsaccessories.html">
+                                                <img src="./cards/defaut (2).avif" class="card-img-top"
+                                                    alt="Sports Accessories">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sports Accessories</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for products"
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container contact-container">
+        <h1 style="margin: 30px;">..</h1>
+        <h1 class="text-center">Contact Us</h1>
+        <p class="text-center">We'd love to hear from you! Please fill out the form below.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Type your message"></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-outline-light">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Google Map Section -->
+        <div class="map-container">
+            <h2 class="text-center mt-5 m-5">Our Location</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.512344298693!2d144.95592331569484!3d-37.81720934202186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e33!2sMelbourne%20CBD%2C%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1690551737007!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Contact Us. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

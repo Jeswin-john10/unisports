@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unisport</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="sportsitem.css">
+  <!-- gg fonds -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Jaro:opsz@6..72&family=Oswald:wght@200..700&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Jaro:opsz@6..72&family=Oswald:wght@200..700&family=Protest+Revolution&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+  <!-- bootstrp icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+ 
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">UniSports</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="itemMenu" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Items
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="itemMenu">
+              <div class="container">
+                <div class="row">
+                  <!-- Men Card -->
+                  <div class="col-md-4">
+                    <div class="card text-center bg-dark text-light">
+                      <a href="./men.html"> <img src="./cards/defaut.avif" width="300px" class="card-img-top"
+                          alt="Men"></a>
+                      <div class="card-body">
+                        <h5 class="card-title">Men</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Women Card -->
+                  <div class="col-md-4">
+                    <div class="card text-center bg-dark text-light">
+                      <a href="./woman.html">
+                        <img src="./cards/defaut (1).avif" class="card-img-top" alt="Women">
+                      </a>
+                      <div class="card-body">
+                        <h5 class="card-title">Women</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Sports Accessories Card -->
+                  <div class="col-md-4">
+                    <div class="card text-center bg-dark text-light">
+                      <a href="./sportsaccessories.html">
+                        <img src="./cards/defaut (2).avif" class="card-img-top" alt="Sports Accessories">
+                      </a>
+                      <div class="card-body">
+                        <h5 class="card-title">Sports Accessories</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search for products" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <h1 style="margin: 30px;">..</h1>
+  <!-- sports items -->
+  <div class="container-fluid" style="padding-left: 100px;">
+
+    <h1 class="pt-4 text-center">Sports Accessories</h1>
+
+    <!-- drop down -->
+    <div class="row mt-5 ">
+      <div class="col-lg-2  col-md-4 col-sm-6 ">
+        <div class="dropdown mt-5 ms-2 mb-3">
+          <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </button>
+          <ul class="dropdown-menu bg-kight">
+            <li><a class="dropdown-item" href="#batminton">Badminton</a></li>
+            <li><a class="dropdown-item" href="#skating">Skating</a></li>
+            <li><a class="dropdown-item" href="#gym">Gym & Training</a></li>
+            <li><a class="dropdown-item" href="#cycling">CYcling</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#football"><img class="img-fluid"
+            src="https://i.pinimg.com/736x/fe/fe/11/fefe110c2ace5e7dc23c1fbf983c5ce7.jpg" alt=""
+            style="height: 150px;"></a>
+        <h3 class="ms-4 mt-2">Football</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#cricket"><img class="img-fluid"
+            src="https://i.pinimg.com/736x/52/9d/f8/529df80e5213c732d53b6177ebd2dc79.jpg" alt=""
+            style="height: 150px;"></a>
+        <h3 class="ms-4 mt-2">Cricket</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#tennis"><img class="img-fluid"
+            src="https://i.pinimg.com/736x/c3/59/08/c3590819ffd6a67fef02d93505bc5338.jpg" alt=""
+            style="height: 150px;"></a>
+        <h3 class="ms-4 mt-2">Tennis</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#basketball"><img class="img-fluid"
+            src="https://i.pinimg.com/736x/16/55/17/165517c1c53ddb07084e8ddecf50e707.jpg" alt=""
+            style="height: 150px;"></a>
+        <h3 class="ms-4 mt-2">Basketball</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#hockey"><img class="img-fluid"
+            src="https://i.pinimg.com/736x/10/eb/6e/10eb6e6ac27a97296d21c03422c8be8a.jpg" alt=""
+            style="height: 150px;"></a>
+        <h3 class="ms-4 mt-2">Hockey</h3>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- trendind now -->
+  <div class="pt-5">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#football"> <img
+              src="https://contents.mediadecathlon.com/s1067574/k$81ce5a3fa08e91a25ad66e588879728c/Frame%20427321659.png?format=auto&quality=70&f=1920x0"
+              class="d-block w-100" alt="...">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#cricket"> <img
+              src="https://contents.mediadecathlon.com/s1170112/k$9621ad105d12e6f07672c0a476fa4df1/defaut.gif?format=auto&quality=70&f=1920x0"
+              class="d-block w-100" alt="...">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#batminton"> <img
+              src="https://contents.mediadecathlon.com/s1066028/k$ef030754f5401ddfb1e6d52835648538/Frame%20427321520.png?format=auto&quality=70&f=1920x0"
+              class="d-block w-100" alt="...">
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- football -->
+  <div id="football" style="padding-left: 100px;">
+    <h3 class="ms-3">Football</h3>
+
+    <!-- iem list -->
+
+    <div class="row mt-5 ">
+      <div class="col-lg-2   col-md-4 col-sm-6 ">
+        <div class="dropdown  ms-2 mb-3">
+          <a href="#ball"><img class="img-fluid"
+              src="https://contents.mediadecathlon.com/s1067579/k$f7ab52e3a96089a6cc1c01c91fe167e3/Frame%20427321652.png?format=auto&quality=70&f=320x0"
+              alt="" style="height: 150px;"></a>
+          <h3 class="ms-4 mt-2">Balls</h3>
+
+        </div>
+
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#boot"><img class="img-fluid"
+            src="https://contents.mediadecathlon.com/s1067582/k$ed89814ba33f007ca4d8ecde44d066b4/Frame%20427321653.png?format=auto&quality=70&f=320x0"
+            alt="" style="height: 150px;"></a>
+        <h3 class="ms-2 mt-2">Boot Studs</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#training"><img class="img-fluid"
+            src="https://contents.mediadecathlon.com/s1067568/k$52242029327ba39072bbb8b949899d5d/Frame%20427321655.png?format=auto&quality=70&f=320x0"
+            alt="" style="height: 150px;"></a>
+        <h3 class="ms-2 mt-2">Training <br>Accessories</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#goal"><img class="img-fluid"
+            src="https://contents.mediadecathlon.com/s1067578/k$2a4045c6f76342513c3e6082eccb722e/Frame%20427321658.png?format=auto&quality=70&f=320x0"
+            alt="" style="height: 150px;"></a>
+        <h3 class="ms-1 mt-2">Goal Keeping <br>Glows</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#shocks"><img class="img-fluid"
+            src="https://contents.mediadecathlon.com/s1067588/k$226bba43f7bf76de8b4d32d80ea040dc/Frame%20427321656.png?format=auto&quality=70&f=320x0"
+            alt="" style="height: 150px;"></a>
+        <h3 class="ms-4 mt-2">Shocks &<br>Shingaurds</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#portable"><img class="img-fluid"
+            src="https://contents.mediadecathlon.com/s1067584/k$15ab953a4ad38513982788f71c3d1c04/Frame%20427321657.png?format=auto&quality=70&f=320x0"
+            alt="" style="height: 150px;"></a>
+        <h3 class="ms-3 mt-2">Portable <br>Goals</h3>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- card  balls-->
+  <div id="ball" style="padding-left: 60px;">
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2571367/78f859b6bbd0a90454da85fa9454eb4e/p2571367.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Size 5 Machine-Stitched Football Training Ball - White</h5>
+            <h4 class="text-light ms-5">4.4<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 699 <span class="ms-5">5% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1971131/3cbad2c3765a01b2975de2b705f1ea42/p1971131.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Football Ball Hard Ground F500- Size 5</h5>
+            <h4 class="text-light ms-5">4.1<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,299 <span class="ms-5">10% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2154164/73698deddacfd12d401b7b8262b0b948/p2154164.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Football Ball Match Size 5 FIFA Basic F550 White Red</h5>
+            <h4 class="text-light ms-5">4.8<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,499 <span class="ms-5">20% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2193901/5d224f7efe366b9cec38ad2b664eb4ad/p2193901.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Football Ball Match Size 5 FIFA Pro F900 Green</h5>
+            <h4 class="text-light ms-5">4.1<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,999 <span class="ms-5">17% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card  2  boot & stud-->
+
+
+  <div id="boot" style="padding-left: 60px;">
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1273543/ba5aa42c20222b13455a62fa6ac81a65/p1273543.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Mens Football Shoes Agility 100 Turf Black</h5>
+            <h4 class="text-light ms-5">4.1<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 999 <span class="ms-5">15% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2501165/780d300813bac69db2f7a2bf34ca34a9/p2501165.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Kids' Lace-Up Football Boots 160 AG/FG - Red</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,499 <span class="ms-5">30% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1788692/f9cf74fcbef7fbee485d7c8ff13900ef/p1788692.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Men's Football Shoes Agility 140 FG - Blue</h5>
+            <h4 class="text-light ms-5">4.4<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,999 <span class="ms-5">8% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2380433/47db981d7e5bd61aade59eb9a33dfe30/p2380433.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Football Boots Viralto III 3D AirMesh MG/AG - Intense</h5>
+            <h4 class="text-light ms-5">4.0<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 5,999 <span class="ms-5">10% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- card training accessories -->
+
+
+  <div id="training" style="padding-left: 60px;">
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1350612/79e0c1ed731b5b8647a39a3993e0520a/p1350612.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Football Cones Marking 12inch- Yellow</h5>
+            <h4 class="text-light ms-5">4.5<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 199 <span class="ms-5">17% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1610079/d9d93805d4e315d2deea730bb69a96a4/p1610079.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Essential Football Training Flat Markers 10-Pack - Orange</h5>
+            <h4 class="text-light ms-5">4.5<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 399 <span class="ms-5">20% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2153978/4e79e35ac93cdb64af9abc67c2ec66ae/p2153978.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Football Ladder Training Flexible - Orange</h5>
+            <h4 class="text-light ms-5">4.1<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,499 <span class="ms-5">10% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2380039/c5026426a983b12d770b58f989d4556f/p2380039.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Flat Discs 12-Pack - Orange/Yellow</h5>
+            <h4 class="text-light ms-5">4.1<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 999 <span class="ms-5">10% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- goal keping -->
+
+  <div id="goal" style="padding-left: 60px;">
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2585695/37a6a4093d913323826b6899e5044e25/p2585695.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Adult Football Goalkeeper Gloves - Black/Grey</h5>
+            <h4 class="text-light ms-5">4.2<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,299 <span class="ms-5">17% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2606820/2ac06f4bf3b9ef1dc625da121c9af29f/p2606820.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Kids Football Goalkeeper Gloves F100 - Black/Yellow</h5>
+            <h4 class="text-light ms-5">4.8<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 699 <span class="ms-5">30% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2501130/78f100e42bcd693daf990e972315dcd6/p2501130.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Adult Gloves F500 Viralto Shielder - White/Blue</h5>
+            <h4 class="text-light ms-5">4.2<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 2,499 <span class="ms-5">10% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2585639/42930b9255436eec7fa57e141a750663/p2585639.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Goalkeeper Gloves CLR F900 - Red</h5>
+            <h4 class="text-light ms-5">4.4<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 4,999 <span class="ms-5">14% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card shocks shinguard -->
+
+
+  <div id="shocks" style="padding-left: 60px;">
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1610357/8da5d677b59a009e64b0be34012b4564/p1610357.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Kids Football Socks Viralto - Black with Stripes</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 399 <span class="ms-5">19% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1062216/489e0aee0ecdd43f152b5d34f395243c/p1062216.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Adult Football Shin Pads Essential 100 - Black</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 499 <span class="ms-5">40% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1610684/a7ea091a64f90de8321794aaa2f27b92/p1610684.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Kids' Football Socks F100 - White</h5>
+            <h4 class="text-light ms-5">4.3<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 199 <span class="ms-5">38% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1971140/4465b6af1d9d763c198f43974562705a/p1971140.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Adult Football Shin Pads F500 Viralto - Blue</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 599 <span class="ms-5">19% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- card portable goal -->
+
+  <div id="portable" style="padding-left: 60px;">
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1800412/6e9f312b661df4f1057007e45f58a128/p1800412.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Football Goal Kage - Black/Grey</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,399 <span class="ms-5">29% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1618460/cab082baaf280e50836b352fbd45ba98/p1618460.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Football Goal Post SG500 - Size S</h5>
+            <h4 class="text-light ms-5">4.2<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,999 <span class="ms-5">30% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2374760/3c2848b062fee0b8adccfbb88323fd11/p2374760.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Football Goal Air Kage Blue</h5>
+            <h4 class="text-light ms-5">4.3<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 3,199 <span class="ms-5">18% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2153971/fa44385224a53523e829fd28b06e52a2/p2153971.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KIPSTA</h3>
+            <h5 class="card-text text-light">Football Goal Classic Blue</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 11,599 <span class="ms-5">9% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cricket
+  -->
+
+
+
+  <div id="cricket" style="padding-left: 60px;">
+    <h3 class="ms-3 pt-5">Cricket</h3>
+
+
+    <!-- iem list -->
+
+    <div class="row mt-5 ">
+      <div class="col-lg-2   col-md-4 col-sm-6 ">
+        <div class="dropdown  ms-2 mb-3">
+          <a href="#bat"><img class="img-fluid"
+              src="https://contents.mediadecathlon.com/s1170068/k$e677115fc442e3935b321c8361004503/defaut.jpg?format=auto&quality=70&f=320x0"
+              alt="" style="height: 150px;"></a>
+          <h3 class="ms-4 mt-2">Bat</h3>
+
+        </div>
+
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#bowl"><img class="img-fluid"
+            src="https://contents.mediadecathlon.com/s1170069/k$9b7e23e518f63c8ad1612ef360ba0f60/defaut.jpg?format=auto&quality=70&f=320x0"
+            alt="" style="height: 150px;"></a>
+        <h3 class="ms-2 mt-2">Cricket Balls</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#stumbs"><img class="img-fluid"
+            src="https://contents.mediadecathlon.com/s1170078/k$ae3d8105818a3ff5cfe418f6ea2251d2/defaut.jpg?format=auto&quality=70&f=320x0"
+            alt="" style="height: 150px;"></a>
+        <h3 class="ms-2 mt-2">Cricket<br>Shoes</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#stumbs"><img class="img-fluid"
+            src="https://contents.mediadecathlon.com/s1170080/k$95fa8b8a227dd7c858d47b18601ea235/defaut.jpg?format=auto&quality=70&f=320x0"
+            alt="" style="height: 150px;"></a>
+        <h3 class="ms-1 mt-2">Cricket <br>Stumbs</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#gaurd"><img class="img-fluid"
+            src="https://contents.mediadecathlon.com/s1170076/k$f77950043545b8fdbb64df2a48706498/defaut.jpg?format=auto&quality=70&f=320x0"
+            alt="" style="height: 150px;"></a>
+        <h3 class="ms-4 mt-2">Cricket<br>Gaurds</h3>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 ">
+        <a href="#gaurd"><img class="img-fluid"
+            src="https://contents.mediadecathlon.com/s1170082/k$0495db039cfb6a5e379c776116dce352/defaut.jpg?format=auto&quality=70&f=320x0"
+            alt="" style="height: 150px;"></a>
+        <h3 class="ms-4 mt-2">Kids<br>Cricket</h3>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="row pt-5" id="bat" style="padding-left: 60px;">
+
+    <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://contents.mediadecathlon.com/p2407253/f4d8ee6c24f4bd27515208ed77e83b0a/p2407253.jpg?format=auto&quality=70&f=425x0"
+          class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h3 class="card-title ms-5 text-light">FLX</h3>
+          <h5 class="card-text text-light">Adult Cricket Bat for Hard Tennis </h5>
+          <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+          <h3 class="text-light">₹ 1,399 <span class="ms-5">39% Off</span></h3>
+          <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://contents.mediadecathlon.com/p1996998/22d5c80bfc8f572db0a8d26983027448/p1996998.jpg?format=auto&quality=70&f=425x0"
+          class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h3 class="card-title ms-5 text-light">FLX</h3>
+          <h5 class="card-text text-light">Tennis Cricket Ball Hard Tennis Red</h5>
+          <h4 class="text-light ms-5">4.8<i class="fa-regular fa-star"></i></h4>
+          <h3 class="text-light">₹ 99 <span class="ms-5">50% Off</span></h3>
+          <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://contents.mediadecathlon.com/p2304432/1cae3253f71286a22e256b6f4ae3f133/p2304432.jpg?format=auto&quality=70&f=425x0"
+          class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h3 class="card-title ms-5 text-light">FlX</h3>
+          <h5 class="card-text text-light">Cricket Bat Grade 3 English Willow </h5>
+          <h4 class="text-light ms-5">4.1<i class="fa-regular fa-star"></i></h4>
+          <h3 class="text-light">₹ 17,199 <span class="ms-5">18% Off</span></h3>
+          <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://contents.mediadecathlon.com/p1975940/905b29b4fbee3076d611c720738f8ed8/p1975940.jpg?format=auto&quality=70&f=425x0"
+          class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h3 class="card-title ms-5 text-light">FLX</h3>
+          <h5 class="card-text text-light">Tennis Cricket Ball Medium Tennis</h5>
+          <h4 class="text-light ms-5">4.9<i class="fa-regular fa-star"></i></h4>
+          <h3 class="text-light">₹ 79 <span class="ms-5">48% Off</span></h3>
+          <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+  <!-- card cricket stumbs -->
+  <div id="stumbs" style="padding-left: 60px;">
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2249082/61cadcf2ba170efade07e90a3c5f6099/p2249082.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">FLX</h3>
+            <h5 class="card-text text-light">ADULT CRICKET SHOE CS 500 WHITE TURQ</h5>
+            <h4 class="text-light ms-5">4.8<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 2,399 <span class="ms-5">19% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/m19000253/ca3680f444a3fb0da49ff9e24bb9d103/m19000253.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">FLX</h3>
+            <h5 class="card-text text-light">Adidas Adipower Vector White</h5>
+            <h4 class="text-light ms-5">4.8<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 14,999 <span class="ms-5">6% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2407364/c5318a11a9f71ea9e8ad340acc1dc47b/p2407364.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">FlX</h3>
+            <h5 class="card-text text-light">PLASTIC CRICKET STUMP SET</h5>
+            <h4 class="text-light ms-5">4.8<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 599 <span class="ms-5">38% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2407367/ef3b7602bac006a4625f3f4bbfbadbfd/p2407367.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">FLX</h3>
+            <h5 class="card-text text-light">WOODEN CRICKET STUMP BLACK</h5>
+            <h4 class="text-light ms-5">4.5<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 299 <span class="ms-5">28% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <!-- cricket gaurd -->
+  <div id="stumbs" style="padding-left: 60px;">
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2407237/9263f77e49a5728cbff8909db2a2f1fb/p2407237.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">FLX</h3>
+            <h5 class="card-text text-light">Cricket Kit Bag 75 L</h5>
+            <h4 class="text-light ms-5">4.8<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 2,399 <span class="ms-5">10% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2432319/732313b09c60191937cb00001ef6ef24/p2432319.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">FLX</h3>
+            <h5 class="card-text text-light">LIGHTWEIGHT BEGINNER CRICKET HELMET</h5>
+            <h4 class="text-light ms-5">4.3<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,999 <span class="ms-5">63% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2239507/34a2a1349078098a52c8ce2f56c149e1/p2239507.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">FlX</h3>
+            <h5 class="card-text text-light">KIDS CRICKET BATTING GLOVES</h5>
+            <h4 class="text-light ms-5">4.8<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 599 <span class="ms-5">28% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.htmll" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2261769/6c98a684ebebe47ad2b4c462a8ef99c1/p2261769.jpg?format=auto&quality=70&f=425x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">FLX</h3>
+            <h5 class="card-text text-light">KIDS CRICKET BATTING PADS</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,299 <span class="ms-5">18% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <!-- tennis -->
+  <div id="tennis" style="padding-left: 60px;">
+    <h3 class="ms-3 pt-5">Tennis</h3>
+
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2486795/a8f0db1f6e61d7d2712fd5c2cb79d62a/p2486795.jpg?format=auto&quality=70&f=2048x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">ARTENGO</h3>
+            <h5 class="card-text text-light">Tennis Racket Power Pro Red/Black</h5>
+            <h4 class="text-light ms-5">4.8<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 7,399 <span class="ms-5">9% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p151495/84d9b95efb5cfa4544e923b6c34ea07a/p151495.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">ARTENGO</h3>
+            <h5 class="card-text text-light">Tennis Beginner Ball - TB800 Yellow</h5>
+            <h4 class="text-light ms-5">4.9<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 99 <span class="ms-5">40% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2405562/9de2e8bc0ef0b82b4be199b1a6672cb9/p2405562.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">ARTENGO</h3>
+            <h5 class="card-text text-light">Versatile Tennis Ball Comfort Pro 4-Pack - Yellow</h5>
+            <h4 class="text-light ms-5">4.3<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 599 <span class="ms-5">38% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2626845/1662c5b6c1432bea8575a8ca5aca648c/p2626845.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">ARTENGO</h3>
+            <h5 class="card-text text-light">Insulated 12-Racket Tennis Bag XL Pro Black</h5>
+            <h4 class="text-light ms-5">4.5<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 5,299 <span class="ms-5">18% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <!-- basket ball -->
+  <div id="basketball" style="padding-left: 60px;">
+    <h3 class="ms-3 pt-5">Basketball</h3>
+
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2640933/9c2e41a026dc774ba9b0bbd05c42cb79/p2640933.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">TARMAK</h3>
+            <h5 class="card-text text-light">Size 7 Basketball R500 - Purple/Black</h5>
+            <h4 class="text-light ms-5">4.9<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 599 <span class="ms-5">17% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1914261/b8c46165714a1d01ff25f648a6a3a0a3/p1914261.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">TARMAK</h3>
+            <h5 class="card-text text-light">Basketball Ball Size 7 Indoor and Outdoor Orange</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 299 <span class="ms-5">30% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1644785/a7fb2a33438b39d5cd854f10f997d215/p1644785.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">TARMAK</h3>
+            <h5 class="card-text text-light">Basketball Hoop Wall Mounted Fibre board</h5>
+            <h4 class="text-light ms-5">4.2<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 12,599 <span class="ms-5">8% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2611382/0cbcaa15f853ba5d5547a807040d72df/p2611382.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">TARMAK</h3>
+            <h5 class="card-text text-light">Wall-Mounted Basketball Hoop Dunkers Purple</h5>
+            <h4 class="text-light ms-5">4.5<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 699 <span class="ms-5">48% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <!-- hockey -->
+  <div id="hockey" style="padding-left: 60px;">
+    <h3 class="ms-3 pt-5">Hockey</h3>
+
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1975748/34a87611ead27cd7f1ba08e6134b11bf/p1975748.jpg?format=auto&quality=70&f=2048x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KOROK</h3>
+            <h5 class="card-text text-light">Hockey stick- Adults- Fiberglass- FH110- Red</h5>
+            <h4 class="text-light ms-5">4.9<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 2,599 <span class="ms-5">17% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1855932/91da88058b7cf9ac088c0db3d23c6ada/p1855932.jpg?format=auto&quality=70&f=2048x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KOROK</h3>
+            <h5 class="card-text text-light"> Low Bow Hockey Stick Black/Orange</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 8,299 <span class="ms-5">10% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1975752/bf7517a00af3f58732cc5f37689447de/p1975752.jpg?format=auto&quality=70&f=2048x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KOROK</h3>
+            <h5 class="card-text text-light">Hockey Ball</h5>
+            <h4 class="text-light ms-5">4.8<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 99 <span class="ms-5">35% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1854359/7bbcb4e3c889c013cc3552a8ba04bdbb/p1854359.jpg?format=auto&quality=70&f=2048x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">KOROK</h3>
+            <h5 class="card-text text-light">Intensity Field Hockey Shoes Yellow/Blue</h5>
+            <h4 class="text-light ms-5">4.7<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,699 <span class="ms-5">18% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <!-- batminton -->
+  <div id="batminton" style="padding-left: 60px;">
+    <h3 class="ms-3 pt-5">Batminton</h3>
+
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1737049/dc6cecf249d27f9b217d38e4d550a81c/p1737049.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">PERFLY</h3>
+            <h5 class="card-text text-light">Adult Badminton Racket BR 500 Black Yellow</h5>
+            <h4 class="text-light ms-5">4.7<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,599 <span class="ms-5">37% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2719746/6e46fcbb874615d0433b5946b2902909/p2719746.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">PERFLY</h3>
+            <h5 class="card-text text-light"> Badminton Carbon Racket BR Perform </h5>
+            <h4 class="text-light ms-5">3.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 6,299 <span class="ms-5">10% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1588369/54fd992cbd2e6622bde8b147ea56d44d/p1588369.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">PERFLY</h3>
+            <h5 class="card-text text-light">Plastic Shuttlecock PSC 100 x 6 Yellow</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 399 <span class="ms-5">25% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1653779/221e1852cae55e52a716974122916011/p1653779.jpg?format=auto&quality=70&f=320x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">PERFLY</h3>
+            <h5 class="card-text text-light">Indoor Batminton Net</h5>
+            <h4 class="text-light ms-5">4.7<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,699 <span class="ms-5">18% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <!-- skating -->
+  <div id="skating" style="padding-left: 60px;">
+    <h3 class="ms-3 pt-5">Skating</h3>
+
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2771939/d65157e02038b01ce6192df89a27ca38/p2771939.jpg?format=auto&quality=70&f=320x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">OXELO</h3>
+            <h5 class="card-text text-light">Skating Shoes Inline Play 5 White</h5>
+            <h4 class="text-light ms-5">4.7<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 2,599 <span class="ms-5">17% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2599336/e84036ad66961c3f55c46b7c28be5b71/p2599336.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">OXELO</h3>
+            <h5 class="card-text text-light"> Kids' Skates & Skateboard Protection Kit Black </h5>
+            <h4 class="text-light ms-5">3.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,299 <span class="ms-5">30% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2771937/92d802aff8952ca3f078f27ac9673454/p2771937.jpg?format=auto&quality=70&f=2048x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">OXELO</h3>
+            <h5 class="card-text text-light">Skating Shoes Inline Fit 5 Green White</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 6,599 <span class="ms-5">5% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1557049/60ae3678c3cc794fdc443067eeff9e2a/p1557049.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">OXELO</h3>
+            <h5 class="card-text text-light">Inline Skating Skateboarding Scootering Helmet</h5>
+            <h4 class="text-light ms-5">4.7<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 1,699 <span class="ms-5">38% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <!-- / gym and training -->
+
+
+
+
+  <div id="gym" style="padding-left: 60px;">
+    <h3 class="ms-3 pt-5">Gym & Training</h3>
+
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2297777/05ca32eeb76cc64197c38bd388d678e9/p2297777.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">CORENGTH</h3>
+            <h5 class="card-text text-light">Weight Training Adjustable Dumbbell Kit</h5>
+            <h4 class="text-light ms-5">4.2<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 5,599 <span class="ms-5">17% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2720245/2bb51934919b89faf649a33307e27e11/p2720245.jpg?format=auto&quality=70&f=2048x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">CORENGTH</h3>
+            <h5 class="card-text text-light">2.5 kg Cross Training and Weight Training </h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 899 <span class="ms-5">30% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p1562280/4557cf0246a14e117e8b1c6886062fa3/p1562280.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">CORENGTH</h3>
+            <h5 class="card-text text-light">Weight Training Dumbbells</h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 9,399 <span class="ms-5">5% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/m15353922/a21e7c28df0e3e59dbe8a2907597eded/m15353922.jpg?format=auto&quality=70&f=1024x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">FLEXNEST</h3>
+            <h5 class="card-text text-light">Adjustable Iron Dumbbell Set </h5>
+            <h4 class="text-light ms-5">4.7<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 34,699 <span class="ms-5">8% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- cycling -->
+
+  <div id="cycling" style="padding-left: 60px;">
+    <h3 class="ms-3 pt-5">Cycling</h3>
+
+    <div class="row pt-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2563584/3f5f706d0c74856ea1249af20bca9ae4/p2563584.jpg?format=auto&quality=70&f=2048x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">BTWIN</h3>
+            <h5 class="card-text text-light">Mountain Bike Rockrider ST30 Grey - 7 Speed</h5>
+            <h4 class="text-light ms-5">4.2<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 12,599 <span class="ms-5">7% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2276549/51192602e9437258af1e9c1cbf46dcef/p2276549.jpg?format=auto&quality=70&f=2048x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">BTWIN</h3>
+            <h5 class="card-text text-light">Mountain Bike Rockrider ST540 - Hydraulic Disc </h5>
+            <h4 class="text-light ms-5">4.6<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 27,899 <span class="ms-5">3% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2594637/b7c5bcc0ad67ebf52df869bea2a56f31/p2594637.jpg?format=auto&quality=70&f=2048x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">TRIBAN</h3>
+            <h5 class="card-text text-light">Road Bike Triban RC100 Drop Bar</h5>
+            <h4 class="text-light ms-5">4.3<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 29,399 <span class="ms-5">5% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://contents.mediadecathlon.com/p2532039/db7c4753ebc6eeadcc04797940884864/p2532039.jpg?format=auto&quality=70&f=2048x0"
+            class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+            <h3 class="card-title ms-5 text-light">TRIBAN</h3>
+            <h5 class="card-text text-light">Road Bike Triban RC520 </h5>
+            <h4 class="text-light ms-5">4.1<i class="fa-regular fa-star"></i></h4>
+            <h3 class="text-light">₹ 84,699 <span class="ms-5">2% Off</span></h3>
+            <div class="icons"> <a href="" class="ms-3"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="./hh.html" class="btn btn-light ms-5">Buy Now</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+    
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Left Column: Logo and Tagline -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="text-uppercase fw-bold">Unisport</h3>
+                    <p>Your ultimate destination for sports gear and equipment. We provide the tools to help you chase
+                        your goals.</p>
+                    <img src="./WhatsApp Image 2024-12-07 at 8.33.29 PM.jpeg" alt="Unisport Logo" class="img-fluid"
+                        style="max-height: 50px;">
+                </div>
+
+                <!-- Center Column: Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase fw-bold">Explore</h5>
+                    <div class="d-flex justify-content-between">
+                        <ul class="list-unstyled me-3">
+                            <li><a href="./index.html"
+                                    class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="./about.html"
+                                    class="text-white text-decoration-none">About</a></li>
+                            <li><a href="./sportsaccessories.html" class="text-white text-decoration-none">Shop</a></li>
+                            <li><a href="./hh.html" class="text-white text-decoration-none">Cart</a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="#team" class="text-white text-decoration-none">Our Team</a></li>
+                            <li><a href="#testimonials" class="text-white text-decoration-none">Testimonials</a></li>
+                            <li><a href="#faq" class="text-white text-decoration-none">FAQs</a></li>
+                            <li><a href="#blog" class="text-white text-decoration-none">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Social Media and Newsletter -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase fw-bold">Stay Connected</h5>
+                    <p>Follow us on our social platforms:</p>
+                    <div class="d-flex justify-content-center justify-content-md-start mb-3">
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+                    </div>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email"
+                                aria-label="Newsletter">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="my-4 border-light">
+
+            <!-- Bottom Footer -->
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0">© 2024 Unisport. All Rights Reserved.</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#terms" class="text-white text-decoration-none">Terms of
+                            Use</a></li>
+                    <li class="list-inline-item"><a href="#privacy" class="text-white text-decoration-none">Privacy
+                            Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</html>

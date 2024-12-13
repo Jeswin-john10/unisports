@@ -1,0 +1,228 @@
+body {
+    font-family: "Jaro", sans-serif;
+    background-color: #000000;
+}
+/* navbar */
+.dropdown-menu {
+    background-color: rgb(24, 18, 18); 
+    border-radius: 10px;
+    padding: 15px;
+    width: 900px; 
+    max-width: 1400px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.dropdown-menu .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.dropdown-menu .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu .card img {
+    height: 150px; 
+    object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dropdown-menu .row {
+        flex-direction: column; 
+    }
+    .dropdown-menu .col-md-4 {
+        margin-bottom: 15px; 
+    }
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.navbar-nav .nav-link {
+    color:white;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-brand {
+    font-size: 3.5rem;
+ 
+    color: #ffffff ; 
+    font-family: "Jaro", sans-serif;
+ 
+}
+.navbar-brand:hover{
+    color: goldenrod;
+}
+
+.nav-item {
+    font-size: 1.8rem;
+  
+    margin-left: 60px;
+    font-family: "Jaro", sans-serif;
+}
+.navbar-nav .nav-link {
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: goldenrod; 
+    border-radius: 5px; 
+    padding: 0.25rem 0.5rem; 
+}
+
+form .form-control {
+    font-family: "Jaro", sans-serif; 
+    font-size: 20px; 
+    color: #726c6c; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+form .btn {
+    font-family: "Jaro", sans-serif; 
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+}
+/* Home Section */
+.home-section {
+    background: url('./black-background-with-wavy-lines_52683-76524.avif') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 90px;
+}
+
+.home-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.home-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Jaro", sans-serif; 
+}
+
+.home-section p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.home-section .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+/* Hover Effect for home Images */
+/* Remove default link styles for image buttons */
+.image-button {
+    display: inline-block; /* Ensures the link behaves like a block container for the image */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Hover Effect for Image Buttons */
+.image-button img {
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+.image-button img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    opacity: 0.9; /* Reduce opacity slightly */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate interactivity */
+}
+@media (max-width: 768px) {
+    .home-section img {
+        max-width: 300px;
+        height: 350px;
+        margin-top: 30px;
+    }
+
+}
+/*  deal of the day */
+.carousel-inner img{
+    width: 100%;
+    height: 500px;
+}
+/* Carousel Section Styling */
+#carousel .carousel-item {
+    height: 400px;
+    object-fit: cover;
+}
+
+#carousel .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+/* cards */
+#cards-section img{
+    width: 100%;
+    height: 300px;
+  
+}
+
+/* Featured Brands Section Styling */
+#shop-by-brand{
+    background-color: #000000;
+}
+#featured-brands img {
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+#featured-brands img:hover {
+    transform: scale(1.1);
+}
+
+/* General Footer Styling */
+/* Footer Styling */
+footer {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #000000, #191818);
+}
+
+footer h5, footer h3 {
+    color: #f4a261;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f4a261;
+    text-decoration: underline;
+}
+
+footer .input-group input {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #f4a261;
+}
+
+footer .input-group .btn {
+    border-radius: 0 20px 20px 0;
+    background-color: #f4a261;
+    color: #222;
+    border: 1px solid #f4a261;
+}
+
+footer .btn:hover {
+    background-color: #e76f51;
+    border-color: #e76f51;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+

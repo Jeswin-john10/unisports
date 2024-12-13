@@ -1,0 +1,156 @@
+
+*{
+  margin: 0px;
+    padding-left: 0px;
+    font-family: "Jaro", sans-serif;
+    background-color: black;
+    color: black;
+
+}
+/* navbar */
+.dropdown-menu {
+    background-color: rgb(24, 18, 18); 
+    border-radius: 10px;
+    padding: 15px;
+    width: 900px; 
+    max-width: 1400px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.dropdown-menu .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.dropdown-menu .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu .card img {
+    height: 150px; 
+    object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dropdown-menu .row {
+        flex-direction: column; 
+    }
+    .dropdown-menu .col-md-4 {
+        margin-bottom: 15px; 
+    }
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.navbar-nav .nav-link {
+    color:white;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-brand {
+    font-size: 3.5rem;
+ 
+    color: #ffffff ; 
+    font-family: "Jaro", sans-serif;
+ 
+}
+.navbar-brand:hover{
+    color: goldenrod;
+}
+
+.nav-item {
+    font-size: 1.8rem;
+  
+    margin-left: 60px;
+    font-family: "Jaro", sans-serif;
+}
+.navbar-nav .nav-link {
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: goldenrod; 
+    border-radius: 5px; 
+    padding: 0.25rem 0.5rem; 
+}
+
+form .form-control {
+    font-family: "Jaro", sans-serif; 
+    font-size: 20px; 
+    color: #726c6c; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+form .btn {
+    font-family: "Jaro", sans-serif; 
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+}
+
+/* card */
+.icons i{
+    color: aqua;
+    font-size: 1.5rem;
+}
+.icons i:hover{
+    color:white;
+}
+.icons .btn{
+    background-color: aqua;
+}
+.icons .btn:hover{
+    color:white;
+    color: #000000;
+}
+
+/* Footer Styling */
+footer {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #000000, #191818);
+}
+
+footer h5, footer h3 {
+    color: #f4a261;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f4a261;
+    text-decoration: underline;
+}
+
+footer .input-group input {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #f4a261;
+}
+
+footer .input-group .btn {
+    border-radius: 0 20px 20px 0;
+    background-color: #f4a261;
+    color: #222;
+    border: 1px solid #f4a261;
+}
+
+footer .btn:hover {
+    background-color: #e76f51;
+    border-color: #e76f51;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
